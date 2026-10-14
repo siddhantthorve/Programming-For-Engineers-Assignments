@@ -1,0 +1,144 @@
+#Program to convert kilometres into miles
+km=int(input("Enter no. of kilometres : "))
+miles=km*0.621371
+print(miles)
+
+
+#Program to check whether the given number is positive, negative or 0
+num=int(input("Enter your number : "))
+if(num>0) :
+    print("Given number is Positive")
+elif(num<0) :
+    print("Given number is Negative")
+elif(num==0) :
+    print("Given number is composite/0")
+
+
+
+
+#Program to Swap Variables
+a=int(input("Enter a : "))
+b=int(input("Enter b : "))
+print("a="), print(b)
+print("b="), print(a)
+
+
+
+#Program to generate a fourth vertex of a rectangle
+x1=1
+y1=4
+x2=1
+y2=6
+x3=7
+y3=4
+if x1==x2:
+    x4=x3
+else:
+    x4=x1
+if y1==y2:
+    y3=y4
+else:
+    y4=y1
+print(x4,y4)
+
+
+
+
+
+#Program to find the lost card
+n=int(input("Enter number of given cards : "))
+a=[1,2,3,4,5,6]
+total=n*(n+1)/2
+sum_remaining=sum(a)
+lost=total-sum_remaining
+print(lost)
+
+
+
+
+
+#Program to find angle(in degrees)of the hour hand on the clock face
+print("1hour=30deg.....360/12=30")
+print("1min=0.5deg.....30/60=0.5")
+print("1sec=0.0083deg..60/72000=0.0083")
+H=int(input("Enter hours : "))
+M=int(input("Enter min : "))
+S=int(input("Enter sec : "))
+deg=(H*30)+(M*0.5)+(S*0.0083)
+print(deg)
+
+
+
+#Area of Circle
+r=int(input("enter radius r : "))
+Area=3.14*r*r
+print(Area)
+
+
+
+#Area of Triangle
+b=int(input("enter base of triangle : "))
+h=int(input("enter height of triangle : "))
+Area=b*h
+print(Area)
+
+
+
+#Program to find whether the given year is a leap year or not
+year=int(input("enter year : "))
+if year%4==0:
+    print("given year is a leap year")
+else:
+    print("given year is not a leap year")
+
+
+
+
+
+#Program to find maximum number out of given three numbers
+a=int(input("enter a : "))
+b=int(input("enter b : "))
+c=int(input("enter c : "))
+if a>b and a>c:
+    print("a is the greatest number")
+elif b>a and b>c:
+    print("b is the greatest number")
+elif c>a and c>b:
+    print("c is the greatest number")
+
+    
+
+    
+
+#Program to find roots of a quadratic equation
+a=int(input("enter a : "))
+b=int(input("enter b : "))
+c=int(input("enter c : "))
+det=b**2-4*a*c
+root1=-b+(det)**0.5/2*a
+root2=-b-(det)**0.5/2*a
+print("root1 : ",root1)
+print("root2 : ",root2)
+
+
+
+#Desk Problem
+import math
+a=20
+b=21
+c=22
+noa=a/2
+nob=b/2
+noc=c/2
+total=noa+nob+noc
+print(math.ceil(noa))
+print(math.ceil(nob))
+print(math.ceil(noc))
+print(math.ceil(total))
+
+
+
+#Program to generate a random number
+import random
+num = random.randint(1, 100)
+print(num)
